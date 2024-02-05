@@ -81,14 +81,32 @@ var cat = {
 }
 animals.push(cat)
 //  7. [ ] Create two more animal objects each with a species, a name, and at least two sounds sounds and add each one of them to `animals.
-
+bird = {
+  species: "bird", name: "coocoo", noises: ["squwek", "cherp", "caww", "sing" ],
+  
+}
+animals.push(bird)
 //  8. [ ] `console.log` `animals`, and, `console.log` the length of `animals`. Is everything looking right?
 
 //////////////////////////////////////////////////////////////////////
 // Step 7 - Making Friends ///////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
+// ] Choose a data structure for this **list** of friends.
+// the best data structure for any list is an array 
+// 2. [ ] Write a comment in your code that explains why you chose this data structure.
 
+// 3. [ ] Create a variable called `friends` and assign it to the data structure that you chose.
+var friends = []
+// 4. [ ] Take a look at the documentation for `Math.random` here: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+animal.friends = friends
+// 5. [ ] Write a function called `getRandom` that takes our `animals` array and returns  a random `index` of the input array, using `Math.random`
+function getRandom(animals){
+  return Math.floor(Math.random() )
+}
+// 6. [ ] Using a random index from this function that you just created, get a random animal and add its `name` to `friends`.
+// 7. [ ] `console.log` `friends`.
+// 8. [ ] Using **bracket notation**, add the `friends` list as a **property** also named `friends` on one of the animals in the `animals` array
 
 /**
  * Nice work! You're done Part 1. Pat yourself on the back and
