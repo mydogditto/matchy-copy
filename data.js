@@ -11,12 +11,26 @@
 //////////////////////////////////////////////////////////////////////
 // Step 1 - Object Creation //////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-
-let dog = "Porsha"
+//Create a variable named `animal` and assign it to an empty object.
+var animal = {}
+//3. [ ] Using **dot notation** give `animal` a **property** named `species` with a value of any animal species.
+animal.species = "dog"
+//4. [ ] Using **bracket notation** give `animal` a **property** called `name` with a value of your animal`s name.
+animal['name'] = "Porsha"
+//5. [ ] Using either notation, give `animal` a **property** called `noises` with a value of empty array.
+animal.noises = []
 
 //////////////////////////////////////////////////////////////////////
 // Step 2 - Array Creation ///////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
+// Create a variable named `noises` and assign it to an empty array.
+var noises = []
+//  2. [ ] Using **bracket notation** give `noises` it's first element. A string representing a sound your animal might make.
+noises[0] = "woof"
+//  3. [ ] Using an array function add another noise to the end of `noises`.
+noises.push("bark")
+noises.unshift("whine")
+noises[noises.length] = "Whimper"
 
 
 
@@ -24,8 +38,10 @@ let dog = "Porsha"
 // Step 3 - Combining Step 1 and 2 ///////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
-
-
+// Using **bracket syntax**, assign the `noises` property on `animal` to our new `noises` array.
+animal["noises"] = noises
+// 2. [ ] Using any syntax add another noise to the `noises` property on `animal`.
+animal.noises.push("yelp")
 /* *******************************************************************
  * Step 4 - Review
  *
@@ -49,7 +65,24 @@ let dog = "Porsha"
 // Step 6 - A Collection of Animals //////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
+// 1. [ ] Create a variable named `animals` and assign it to an empty array.
+var animals = [];
+//  2. [ ] `push` our `animal` that we created to `animals`. You should now see your first animal appear on your `index.html` page!
+animals.push(animal)
+//  3. [ ] `console.log` `animals`. What does it look like?
+//  4. [ ] Create a variable called `duck` and assign it to the data:
+var duck =
+{ species: 'duck', name: 'Jerome', noises: ['quack', 'honk', 'sneeze', 'woosh'] }
+//  5. [ ] `push` `duck` to `animals`
+animals.push(duck)
+//  6. [ ] `console.log` `animals`. What does it look like?
+var cat = {
+  species: "cat", name: "mooshie", noises: ["meew", "perr", "hiss", "pounce"]
+}
+animals.push(cat)
+//  7. [ ] Create two more animal objects each with a species, a name, and at least two sounds sounds and add each one of them to `animals.
 
+//  8. [ ] `console.log` `animals`, and, `console.log` the length of `animals`. Is everything looking right?
 
 //////////////////////////////////////////////////////////////////////
 // Step 7 - Making Friends ///////////////////////////////////////////
