@@ -78,7 +78,19 @@ for(let i = 0; i < array.length; i++){
 //    - Checks that the animal Object has a `species` property with a length > 0.
 //    - Has a **unique** name, meaning no other animals have that name.
 //    - Adds this new Object to the `animals` Array, **only** if all the other conditions pass.
-
+function add(animals, animal){
+    // loop through the array
+  for(let i = 0; i < animals.length; i++){
+  // check if the name property has a length of > 0 and  check if the species property has a length of > 0
+    if(animals[i].name.length > 0 && animals[i].species.length > 0){
+        //see if the name is unique using the some method
+    if(!animals.some(animalObj => animalObj.name === animal.name))
+                   
+    return animals.push(animal)
+ 
+}
+  }
+}
 /**
  * You did it! You're all done with Matchy!
  */
